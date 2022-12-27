@@ -1,0 +1,19 @@
+import { ThreeCircles } from 'react-loader-spinner';
+
+export const Loader = () => {
+  return (
+    <>
+      <ThreeCircles
+        color="#00BFFF"
+        height={80}
+        width={80}
+        wrapperStyle={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        }}
+      />
+    </>
+  );
+};
