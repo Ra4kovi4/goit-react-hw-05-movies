@@ -14,7 +14,7 @@ export const getPopularityMoovie = async () => {
 
 //запрос фильма по ключевому слову
 export const getMoovieByName = async query => {
-  const { data } = await axios.get(`/search/movie/`, {
+  const { data } = await axios.get(`/search/movie`, {
     params: {
       query,
       api_key: KEY,
